@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TwitterClone">
         <activity android:name=".ui.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.TwitterClone.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

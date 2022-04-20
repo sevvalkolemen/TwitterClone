@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/applicationToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/twitter_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/applicationNavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/applicationBottomNavigationView"
+            app:layout_constraintTop_toBottomOf="@id/applicationToolbar"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation_application"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_create"
+            android:backgroundTint="@color/twitter_blue"
+            android:foregroundTint="@color/twitter_blue"
+            app:borderWidth="0dp"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/applicationBottomNavigationView"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/fabdescription" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/applicationBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/application_bottom_nav_menu"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+            app:labelVisibilityMode="unlabeled"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

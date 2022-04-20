@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">TwitterClone</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="message">Message</string>
+    <string name="fabdescription">FabDescription</string>
+    <string name="person_icon">PersonIcon</string>
+    <string name="person_full_name">Person Full Name</string>
+    <string name="person_username">\@person_username_long_test</string>
+    <string name="lorem_ipsum">Morbi vel nulla vulputate, commodo eros sit amet, laoreet odio. Praesent orci nunc, efficitur eu tempus ut, fermentum quis diam. Praesent suscipit volutpat bibendum. In consectetur felis eu lobortis ullamcorper. Morbi posuere eros velit, sed dapibus eros imperdiet sit amet. Morbi augue massa, consectetur eu enim ac, euismod accumsan velit. Aliquam finibus commodo mi, quis tempor turpis suscipit id. Mauris leo nibh, imperdiet et iaculis eu, laoreet ut ex. Donec felis urna, mollis et quam in, efficitur venenatis leo. Nullam nec justo rutrum dui commodo interdum. Morbi vel nulla vulputate, commodo eros sit amet, laoreet odio. Praesent orci nunc, efficitur eu tempus ut, fermentum quis diam. Praesent suscipit volutpat bibendum. In consectetur felis eu lobortis ullamcorper. Morbi posuere eros velit, sed dapibus eros imperdiet sit amet. Morbi augue massa, consectetur eu enim ac, euismod accumsan velit. Aliquam finibus commodo mi, quis tempor turpis suscipit id. Mauris leo nibh, imperdiet et iaculis eu, laoreet ut ex. Donec felis urna, mollis et quam in, efficitur venenatis leo. Nullam nec justo rutrum dui commodo interdum.</string>
 </resources>
