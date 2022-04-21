@@ -15,4 +15,10 @@ public class PostRepositoryFactoryTest extends TestCase {
     public void testGetInstance() {
         assert postRepositoryFactory.getInstance() instanceof PostRepository;
     }
+
+    public void testGetInstanceEquals(){
+        PostRepository postRepositoryOne = (PostRepository) postRepositoryFactory.getInstance();
+        PostRepository postRepositoryTwo = (PostRepository) postRepositoryFactory.getInstance();
+        assert postRepositoryOne == postRepositoryTwo;
+    }
 }
