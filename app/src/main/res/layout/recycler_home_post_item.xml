@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/personIcon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_round_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/person_icon" />
+
+        <TextView
+            android:id="@+id/personFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/personIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/person_full_name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:maxLength="20"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/personUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/personFullName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/person_username"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/postDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/personIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personFullName"
+            app:layout_constraintBottom_toTopOf="@id/postToolbar"
+            android:text="@string/lorem_ipsum"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:maxLength="350"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/postToolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill"
+            app:layout_constraintStart_toEndOf="@id/personIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_mode_comment"
+                android:paddingRight="15dp"
+                android:paddingVertical="15dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_autorenew"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_favorite"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_share"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
